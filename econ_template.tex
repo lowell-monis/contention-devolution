@@ -1,0 +1,85 @@
+\documentclass{article}
+
+% You can use any LaTeX packages here
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[top=0in, right=0.4in, left=0.4in, bottom=0.4in]{geometry}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{lettrine}
+
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+
+% some random thing to fix Rmd issues
+%$if(highlighting-macros)$
+%$highlighting-macros$
+%$endif$
+
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{4}
+
+\setlength{\parskip}{0pt} % eliminate spacing between paragraphs
+
+\begin{document}
+
+\pagenumbering{empty}
+\pagestyle{empty}
+
+\definecolor{msugreen}{HTML}{008208}
+
+
+\newcommand{\mycbox}[1]{\tikz{\path[draw=msugreen,fill=msugreen] (-1,0) rectangle (8cm,0.7cm);}}
+
+\newcommand{\econbox}[1]{\tikz{\path[draw=msugreen,fill=msugreen] (0,0) rectangle (0.2cm,0.2cm);}}
+
+\newcommand{\helmet}{\includegraphics[height=1.1em]{spartan.jpg}}
+
+\mycbox  \par\noindent\hspace*{0.5cm}\rule{0.489\textwidth}{0.5pt}
+
+%\hspace{4em}
+
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{flushleft}
+    \makeatletter
+    {\fontfamily{phv}\selectfont{\Large \textcolor{msugreen}{Graphic Detail}: $tag$}}
+    \makeatother
+    \end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t]{0.4\textwidth}
+    \begin{flushright}
+    \makeatletter
+    {\fontfamily{phv}\selectfont{\textbf{$author$} $date$}}
+    \makeatother
+    \end{flushright}
+    \end{minipage}
+    
+    \begin{center}
+    \par\noindent\rule{\textwidth}{0.5pt}
+    \end{center}
+        
+    \begin{center}
+    \includegraphics[width=\textwidth]{$figure_path$}
+    \end{center}
+
+    \begin{multicols}{3}
+    \makeatletter
+    \noindent {\Large \textbf{$title$}}
+    \makeatother 
+    \vspace{0.2in}
+    
+    \noindent {\textbf{$summary$}}
+    
+    \vspace{0.15in}
+    
+    $body$~\helmet %\econbox{red}
+    \end{multicols}
+
+    
+\end{document}

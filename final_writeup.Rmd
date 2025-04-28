@@ -1,0 +1,33 @@
+---
+title: "Contention devolution"
+author: "Lowell Monis"
+tag: "Democracy"
+summary: "In India, the strength of subnational democracy is closely tied to the nature of political contention---peaceful mobilization predicts electoral resilience, while violence predicts democratic decay."
+date: "April 28, 2025"
+figure_path: figure2.png
+output:
+  pdf_document:
+    template: econ_template.tex
+---
+
+<!-- I would like the extra credit. -->
+
+India’s status as the world’s largest democracy has become increasingly fraught. Following the Bharatiya Janata Party's (*lit.* Indian People's Party) ascent in 2014, democratic indicators such as those from V-Dem and Freedom House recorded a sharp decline. Electoral processes may have remained procedurely intact, but political freedoms, civil liberties, and media autonomy eroded markedly. This democratic backsliding was not confined to the national stage: it reshaped the subnational landscape as well.
+
+The resilience of democracy in India is increasingly shaped not just by elections but by the forms of political contention that surround them. Using data from ACLED and the Index of Subnational Electoral Democracy (ISED) scores, a combination of electoral participation and competition, as coined by Javier Perez Sandoval, this analysis probes whether the amount, or character of contention---violent or nonviolent---predicts the strength of electoral democracy across Indian states.
+
+The results suggest a strong and troubling pattern. Violent contention---including armed confrontations, civilian targeting, and electoral violence---systematically correlates with lower subnational democracy scores. States marred by violent events consistently underperform on the ISED scale, regardless of their  economic standing. Violence appears to be not just a symptom but a driver of democratic erosion.
+
+In contrast, nonviolent protest correlates with higher democratic performance. States with vibrant but peaceful contention---including mass mobilizations, strikes, and demonstrations---tend to maintain stronger electoral institutions and higher turnover rates. Here, contentious politics serves as a sign of democratic vitality rather than fragility.
+
+The analysis reinforce this finding: violence exerts a negative and statistically significant effect on subnational democracy, while nonviolent events are positively associated with democratic strength. Civilian targeting, fatalities, and by a small margin, the population of the area, also play a role in predicting the scores. Importantly, it is not the volume of contention that matters most, but its nature---whether claims are advanced through ballots or bullets.
+
+\begin{figure*}[ht]
+  \includegraphics[width=\textwidth]{figure1.png}
+\end{figure*}
+
+India’s 2024 general election, which reduced the ruling BJP to a coalition government, hints at how nonviolent contention may help arrest or even reverse democratic backsliding, a prime example being opposition-led nation-wide marches, like the Bharat Jodo Yatra (*lit.* United India Journey). However, regional disparities remain stark. Some states, such as Manipur, fell sharply from their prior democratic peaks after violent conflict surged, highlighting the fragility of subnational democratic institutions in the face of violence.
+
+Once considered a beacon of subnational democracy, Manipur exemplifies the risks of violent contention. Prior to the outbreak of ethnic conflict in 2023, Manipur consistently ranked among the highest-scoring states on the ISED democracy index, reflecting competitive elections and strong electoral institutions. However, the surge in communal violence, targeted civilian unrest, and religious pogroms, precipitated a dramatic collapse in its democratic standing. While data for the ISED scores is unavailable, Manipur is currently under the direct rule of the President, with its legislature dismissed. Manipur’s reversal highlights how even historically robust democracies can rapidly deteriorate when violence supplants peaceful political contestation. This is an obvious example with civil conflict being a direct predictor of democratic backsliding, but the model looks reliable in general.
+
+The Indian case underscores a broader pattern observed in other large federal democracies: democracy is not simply a matter of holding elections, but of maintaining the conditions that allow peaceful political contestation. Where violence becomes normalized, formal electoral institutions hollow out even if elections continue to occur. India's recent experience shows that subnational democratic health cannot be taken for granted; it is shaped continuously by how claims are made, contested, and resolved within states. As political competition intensifies nationally and locally, the pathways of contention---violent or nonviolent---may increasingly determine where democracy deepens and where it unravels.
